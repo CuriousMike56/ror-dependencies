@@ -29,9 +29,8 @@ endif ()
 ExternalProject_Add(
         ogre
         DEPENDS ogredeps
-        URL https://github.com/OGRECave/ogre/archive/refs/tags/v13.5.0.tar.gz
-        URL_MD5 d97f33be47f8af873c0e82bb70f0f0f6
-        PATCH_COMMAND git apply ${CMAKE_CURRENT_SOURCE_DIR}/scriptlexer.patch
+        URL https://github.com/paroj/ogre/archive/refs/heads/rtss_terrain.zip
+        URL_MD5 2e910b896f6914d683e65133f0430629
         CMAKE_ARGS
         -DCMAKE_INSTALL_PREFIX=${DEPENDENCIES_OUTPUT_DIR}
         -DOGRE_DEPENDENCIES_DIR=${DEPENDENCIES_OUTPUT_DIR}
